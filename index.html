@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudecode Match Puzzle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍬 Sudecode Match Puzzle</h1>
+    <p class="encourage">Sharpen your mind. Match and Win! 💡🔥</p>
+    <div class="stats">
+      <p>Score: <span id="score">0</span></p>
+      <p>High Score: <span id="high-score">0</span></p>
+      <p>Moves: <span id="moves">0</span></p>
+      <p>Lives: <span id="lives">5</span></p>
+      <p>Time: <span id="timer">180</span>s</p>
+    </div>
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+  </header>
+
+  <main>
+    <div id="grid"></div>
+    <div id="motivation"></div>
+    <button id="use-bomb">💣 Use Bomb</button>
+    <button id="restart" style="display: none;">🔄 Restart Game</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sudecode Games | Built with ❤️</p>
+  </footer>
+
+  <!-- Sound Effects -->
+  <audio id="match-sound" src="match.mp3" preload="auto"></audio>
+  <audio id="error-sound" src="error.mp3" preload="auto"></audio>
+
+  <!-- Game Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
